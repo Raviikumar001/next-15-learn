@@ -1,9 +1,11 @@
-export default function  NotFound() {
+import Link from "next/link";
 
-    return (
-        <>
-        <h2>page not found</h2>
-        <p>Couldn't find the requested resource</p>
-        </>
-    )
+export default function NotFound() {
+  return (
+    <div>
+      <h2>Not Found</h2>
+      <p>Could not find requested resource</p>
+      <Link href="/">Return Home</Link>
+    </div>
+  );
 }
