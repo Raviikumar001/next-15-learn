@@ -1,5 +1,12 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
+import Link from "next/link";
+
+const navLinks = [
+  { name: "Register", href: "/register" },
+  { name: "Login", herf: "/login" },
+  { name: "Forgot Password", href: "/forgot-password" },
+];
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
