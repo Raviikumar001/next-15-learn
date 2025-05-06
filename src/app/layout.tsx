@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
-
+import { ErrorWrapper } from "./error-wrapper";
 const geistSans = Geist({
   variable: "--font-geist-sans",
   subsets: ["latin"],
@@ -38,7 +38,7 @@ export default function MarketingLayout({
         >
           <h1>Header</h1>
         </header>
-        {children}
+        <ErrorWrapper>{children}</ErrorWrapper>
 
         <footer
           style={{
