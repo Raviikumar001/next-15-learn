@@ -27,9 +27,9 @@ const ErrorSimuator = ({
 export const ErrorWrapper = ({ children }: WrapperProps) => {
   return (
     <div className="flex flex-col rounded-lg mt-8 relative p-4 border border-gray-300">
-      <div className="absolute top-0 left-4 -translate-y-1/2">
+      {/* <div className="absolute top-0 left-4 -translate-y-1/2">
         <ErrorSimuator message="Simulated error in root layout" />
-      </div>
+      </div> */}
       {children}
     </div>
   );
